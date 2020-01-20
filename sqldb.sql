@@ -1,0 +1,10 @@
+CREATE DATABASE PruebaCemaco;
+CREATE TABLE UserInfo (
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(75) NOT NULL,
+    telefono VARCHAR(15) NOT NULL,
+    correo VARCHAR(50) NOT NULL,
+    password VARCHAR(50) NOT NULL,
+    porque VARCHAR(1000) NOT NULL,
+    fechahora TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
